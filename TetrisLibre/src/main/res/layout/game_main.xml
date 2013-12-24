@@ -1,0 +1,2807 @@
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="12">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleHeight="fill"
+            android:scaleWidth="fill"
+            android:scaleGravity="fill">
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:weightSum="12">
+
+                <ImageView
+                    android:scaleHeight="fill"
+                    android:scaleWidth="fill"
+                    android:scaleGravity="fill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/wall" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blank" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_19_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="12">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_18_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_17_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_16_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_15_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_14_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_13_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_12_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_11_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_10_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_9_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_8_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_7_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_6_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_5_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_4_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_3_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_2_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_1_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:scaleHeight="fill"
+                android:scaleWidth="fill"
+                android:scaleGravity="fill">
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_0"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_2"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_3"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_4"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_5"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_6"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_7"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_8"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/board_0_9"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:scaleGravity="fill"
+                    android:background="@drawable/wall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/wall"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:layout_weight="1" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:weightSum="20"
+        android:gravity="top">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="top"
+            android:weightSum="2"
+            android:layout_gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level"
+                android:gravity="top"
+                android:id="@+id/LevelLabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="top"
+                android:id="@+id/LevelReadout" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="top"
+            android:weightSum="2"
+            android:layout_gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score:"
+                android:gravity="top"
+                android:id="@+id/ScoreLabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="top"
+                android:id="@+id/ScoreReadout" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/frameLayout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_weight="3"
+            android:weightSum="2"
+            android:layout_gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="Lines"
+                android:id="@+id/LinesLabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="top"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/LinesReadout" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/frameLayout2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:layout_weight="4"
+            android:weightSum="3"
+            android:layout_gravity="top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="Next Peice"
+                android:id="@+id/textView" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="top"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:minHeight="15dp"
+                android:minWidth="60dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:gravity="top"
+                    android:id="@+id/np00"
+                    android:layout_weight="1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/np01"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank"
+                    android:src="@drawable/s" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/np02"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank"
+                    android:src="@drawable/s" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/np03"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="top"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/np10"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/np11"
+                    android:gravity="top"
+                    android:layout_weight="1"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/np12"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank"
+                    android:src="@drawable/s" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/np13"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:minHeight="15dp"
+                    android:minWidth="15dp"
+                    android:background="@drawable/blank"
+                    android:src="@drawable/s" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:gravity="top"
+                android:layout_height="fill_parent"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout3"
+            android:layout_gravity="right"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+</LinearLayout>

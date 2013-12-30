@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Peice"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np00"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp"
+            android:src="@drawable/blank" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np01"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np02"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np03"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:id="@+id/linearLayout"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np10"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np11"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np12"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/np13"
+            android:layout_weight="1"
+            android:minHeight="15dp"
+            android:minWidth="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -21,4 +21,29 @@ public class Game extends ActionBarActivity {
         setContentView(R.layout.game_main);
         GameState.Connect(this);
     }
+
+    public void Tick(View view)
+    {
+        GameState.Tick();
+    }
+
+    public void Down(View view)
+    {
+        GameState.Down();
+    }
+
+    public void Rotate(View view)
+    {
+        GameState.Rotate();
+    }
+
+    public void Left(View view)
+    {
+        GameState.Left();
+    }
+
+    public void Right(View view)
+    {
+        GameState.Right();
+    }
 }

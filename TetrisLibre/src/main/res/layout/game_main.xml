@@ -2849,12 +2849,14 @@
                 <Button
                     android:id="@+id/button_tick"
                     android:layout_width="40dp"
-                    android:layout_height="40dp" />
+                    android:layout_height="40dp"
+                    android:onClick="Tick" />
 
                 <Button
                     android:id="@+id/button_rotate"
                     android:layout_width="40dp"
-                    android:layout_height="40dp" />
+                    android:layout_height="40dp"
+                    android:onClick="Rotate" />
             </TableRow>
 
             <TableRow
@@ -2864,17 +2866,20 @@
                 <Button
                     android:id="@+id/button_left"
                     android:layout_width="40dp"
-                    android:layout_height="40dp" />
+                    android:layout_height="40dp"
+                    android:onClick="Left" />
 
                 <Button
                     android:id="@+id/button_down"
                     android:layout_width="40dp"
-                    android:layout_height="40dp" />
+                    android:layout_height="40dp"
+                    android:onClick="Down" />
 
                 <Button
                     android:id="@+id/button_right"
                     android:layout_width="40dp"
-                    android:layout_height="40dp" />
+                    android:layout_height="40dp"
+                    android:onClick="Right" />
             </TableRow>
 
         </TableLayout>

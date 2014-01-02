@@ -45,11 +45,25 @@ public final class GameState
         }
 
         tick_num++;
-        Draw();
     }
 
     public static void Down()
     {
         if (board != null) board.Down();
+    }
+
+    public static void Rotate()
+    {
+        if (board != null) board.Rotate();
+    }
+
+    public static void Left()
+    {
+        if (board != null) board.Left();
+    }
+
+    public static void Right()
+    {
+        if (board != null) board.Right();
     }
 }

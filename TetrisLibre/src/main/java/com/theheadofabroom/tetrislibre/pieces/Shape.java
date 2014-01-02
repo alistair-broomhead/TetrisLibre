@@ -51,4 +51,14 @@ public class Shape {
                     new TwoDimensionalCoordinate(x2, y2),
                     new TwoDimensionalCoordinate(x3, y3));
     }
+
+    public Shape rotated()
+    {
+        return new Shape(
+                p0.GetY(), -p0.GetX(),
+                p1.GetY(), -p1.GetX(),
+                p2.GetY(), -p2.GetX(),
+                p3.GetY(), -p3.GetX()
+                );
+    }
 }

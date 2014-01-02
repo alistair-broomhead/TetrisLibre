@@ -33,6 +33,22 @@ public class Board{
         else
             current.Down();
     }
+
+    public void Rotate()
+    {
+        current.Rotate();
+    }
+
+    public void Left()
+    {
+        current.Left();
+    }
+
+    public void Right()
+    {
+        current.Right();
+    }
+
     public void CyclePiece()
     {
         if (next == null) next = Piece.next(this);
@@ -297,20 +313,6 @@ public class Board{
         PieceImages.Z = act.getResources().getDrawable(R.drawable.z);
         PieceImages.O = act.getResources().getDrawable(R.drawable.o);
         PieceImages.T = act.getResources().getDrawable(R.drawable.t);
-
-        final Button tick = (Button) act.findViewById(R.id.button_tick);
-        tick.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                GameState.Tick();
-            }
-        });
-
-        final Button down = (Button) act.findViewById(R.id.button_down);
-        down.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                GameState.Down();
-            }
-        });
     }
 
     public static class PieceImages
@@ -361,7 +363,9 @@ public class Board{
             TwoDimensionalCoordinate cell = cell_coords.next();
             int x = cell.GetX();
             int y = cell.GetY();
-            if (y > BoardCells.length) continue;
+
+            // if somehow the piece has a segment above the board, ignore it
+            if (y >= BoardCells.length) continue;
 
             Drawable img = grid.get(cell);
             BoardCells[y][x].setImageDrawable(img);

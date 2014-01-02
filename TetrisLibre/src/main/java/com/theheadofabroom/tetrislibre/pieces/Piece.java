@@ -89,9 +89,43 @@ public abstract class Piece
         if (! ChangeOK(new_position))
             Settle();
         else
+        {
             position = new_position;
+            Render().Draw();
+        }
+    }
 
-        Render().Draw();
+
+    public void Rotate()
+    {
+        Shape new_shape = shape.rotated();
+        if (ChangeOK(new_shape))
+        {
+            shape = new_shape;
+            Render().Draw();
+        }
+    }
+
+    public void Left()
+    {
+        TwoDimensionalCoordinate new_position = position.add(-1, 0);
+
+        if (ChangeOK(new_position))
+        {
+            position = new_position;
+            Render().Draw();
+        }
+    }
+
+    public void Right()
+    {
+        TwoDimensionalCoordinate new_position = position.add(1, 0);
+
+        if (ChangeOK(new_position))
+        {
+            position = new_position;
+            Render().Draw();
+        }
     }
 
 
@@ -109,6 +143,7 @@ public abstract class Piece
     {
         Settle(board);
         board.CyclePiece();
+        GameState.Draw();
     }
 
 }

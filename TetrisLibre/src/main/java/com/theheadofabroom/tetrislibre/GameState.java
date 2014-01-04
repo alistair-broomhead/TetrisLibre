@@ -13,57 +13,66 @@ public final class GameState
         board = new Board();
     }
 
-    public static final void Connect(Activity act)
+    public static void Connect(Activity act)
     {
         Board.Connect(act);
         NextPiece.Connect(act);
         Draw();
     }
 
-    public static void Draw()
+    private static Piece getCurrent()
     {
         if (board != null)
-        {
-            Piece next = board.getNext();
-            if (next != null)
-                NextPiece.Replace(next);
-
-            Piece current = board.getCurrent();
-            if (current != null)
-                current.Render().Draw();
-        }
+            return board.getCurrent();
+        return null;
     }
 
-    public static int fall_rate = 1;
-    private static int tick_num = 0;
-
-    public static void Tick()
+    private static Piece getNext()
     {
-        if (tick_num == 0 || tick_num % fall_rate == 0)
-        {
-            Down();
-        }
-
-        tick_num++;
+        if (board != null)
+            return board.getNext();
+        return null;
     }
 
-    public static void Down()
+    public static void Draw()
     {
-        if (board != null) board.Down();
+        Piece next = getNext();
+        if (next != null)
+            NextPiece.Replace(next);
+
+        Piece current = getCurrent();
+        if (current == null)
+            board.CyclePiece();
+        else
+            current.Render().Draw();
+    }
+
+    public static boolean Down()
+    {
+        // returns whether the game has ended
+        Piece current = getCurrent();
+
+        return current != null && current.Down() && !getCurrent().OK();
     }
 
     public static void Rotate()
     {
-        if (board != null) board.Rotate();
+        Piece current = getCurrent();
+        if (current != null)
+            current.Rotate();
     }
 
     public static void Left()
     {
-        if (board != null) board.Left();
+        Piece current = getCurrent();
+        if (current != null)
+            current.Left();
     }
 
     public static void Right()
     {
-        if (board != null) board.Right();
+        Piece current = getCurrent();
+        if (current != null)
+            current.Right();
     }
 }

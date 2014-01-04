@@ -1,17 +1,8 @@
 package com.theheadofabroom.tetrislibre;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.os.Build;
-import com.theheadofabroom.tetrislibre.pieces.*;
-import com.theheadofabroom.tetrislibre.*;
 
 public class Game extends ActionBarActivity {
 
@@ -20,30 +11,56 @@ public class Game extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_main);
         GameState.Connect(this);
+        GameState.Draw();
+        // GameLoop.StartTick();
     }
 
-    public void Tick(View view)
-    {
-        GameState.Tick();
+    @Override
+    protected void onStop() {
+        super.onStop();
+        GameLoop.StopTick();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        GameLoop.StopTick();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        GameLoop.StartTick();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        GameLoop.StartTick();
     }
 
     public void Down(View view)
     {
-        GameState.Down();
+        if (GameLoop.active())
+            GameState.Down();
     }
 
     public void Rotate(View view)
     {
-        GameState.Rotate();
+        if (GameLoop.active())
+            GameState.Rotate();
     }
 
     public void Left(View view)
     {
-        GameState.Left();
+        if (GameLoop.active())
+            GameState.Left();
     }
 
     public void Right(View view)
     {
-        GameState.Right();
+        if (GameLoop.active())
+            GameState.Right();
     }
 }
+

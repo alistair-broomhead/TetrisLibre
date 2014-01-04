@@ -8,7 +8,7 @@ import java.util.Random;
 public abstract class Piece
 {
     private final static Random rand = new Random();
-    public static final Piece next(Board board)
+    public static Piece next(Board board)
     {
         int choice = rand.nextInt(7);
         switch (choice)
@@ -58,70 +58,77 @@ public abstract class Piece
         return board_overlaid;
     }
 
-    private boolean ChangeOK(Shape new_shape, TwoDimensionalCoordinate new_coord)
+    private boolean OK(Shape new_shape, TwoDimensionalCoordinate new_coord)
     {
         TwoDimensionalCoordinate[] cells = new_shape.GetSegments();
-        for (int i = 0; i < cells.length; ++i)
-        {
-            TwoDimensionalCoordinate cell = new_coord.add(cells[i]);
+        for (TwoDimensionalCoordinate cell1 : cells) {
+            TwoDimensionalCoordinate cell = new_coord.add(cell1);
             int x = cell.GetX();
             int y = cell.GetY();
-            if ( board.grid.containsKey(cell) || x < 0 || x >= 10 || y < 0 )
-            {
+            if (board.grid.containsKey(cell) || x < 0 || x >= 10 || y < 0) {
                 return false;
             }
         }
         return true;
     }
-    private boolean ChangeOK(Shape new_shape)
+    private boolean OK(Shape new_shape)
     {
-        return ChangeOK(new_shape, position);
+        return OK(new_shape, position);
     }
-    private boolean ChangeOK(TwoDimensionalCoordinate new_coord)
+    private boolean OK(TwoDimensionalCoordinate new_coord)
     {
-        return ChangeOK(shape, new_coord);
+        return OK(shape, new_coord);
     }
 
-    public final void Down()
+    public final boolean OK()
+    {
+        return OK(shape, position);
+    }
+
+    public final boolean Down()
     {
         TwoDimensionalCoordinate new_position = position.add(0, -1);
 
-        if (! ChangeOK(new_position))
+        if (! OK(new_position))
+        {
             Settle();
+            return true;
+        }
         else
         {
             position = new_position;
             Render().Draw();
+            return false;
         }
     }
 
 
-    public void Rotate()
+    public final void Rotate()
     {
         Shape new_shape = shape.rotated();
-        if (ChangeOK(new_shape))
+        if (OK(new_shape))
         {
             shape = new_shape;
             Render().Draw();
         }
     }
 
-    public void Left()
+    public final void Left()
     {
         TwoDimensionalCoordinate new_position = position.add(-1, 0);
 
-        if (ChangeOK(new_position))
+        if (this.OK(new_position))
         {
             position = new_position;
             Render().Draw();
         }
     }
 
-    public void Right()
+    public final void Right()
     {
         TwoDimensionalCoordinate new_position = position.add(1, 0);
 
-        if (ChangeOK(new_position))
+        if (this.OK(new_position))
         {
             position = new_position;
             Render().Draw();
@@ -129,12 +136,11 @@ public abstract class Piece
     }
 
 
-    private final void Settle(Board board_)
+    private void Settle(Board board_)
     {
         TwoDimensionalCoordinate[] cells = shape.GetSegments();
-        for (int i = 0; i < cells.length; i++)
-        {
-            TwoDimensionalCoordinate cell = position.add(cells[i]);
+        for (TwoDimensionalCoordinate cell1 : cells) {
+            TwoDimensionalCoordinate cell = position.add(cell1);
             board_.grid.put(cell, img);
         }
     }

@@ -1,8 +1,9 @@
 <LinearLayout
     android:orientation="horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="clip_horizontal">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -2704,7 +2705,7 @@
             android:layout_height="fill_parent"
             android:gravity="top"
             android:layout_weight="4"
-            android:weightSum="3"
+            android:weightSum="4"
             android:layout_gravity="top">
 
             <TextView
@@ -2743,8 +2744,7 @@
                     android:layout_weight="1"
                     android:minHeight="15dp"
                     android:minWidth="15dp"
-                    android:background="@drawable/blank"
-                    android:src="@drawable/s" />
+                    android:background="@drawable/blank" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -2755,8 +2755,7 @@
                     android:layout_weight="1"
                     android:minHeight="15dp"
                     android:minWidth="15dp"
-                    android:background="@drawable/blank"
-                    android:src="@drawable/s" />
+                    android:background="@drawable/blank" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -2809,8 +2808,7 @@
                     android:gravity="top"
                     android:minHeight="15dp"
                     android:minWidth="15dp"
-                    android:background="@drawable/blank"
-                    android:src="@drawable/s" />
+                    android:background="@drawable/blank" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -2821,8 +2819,7 @@
                     android:gravity="top"
                     android:minHeight="15dp"
                     android:minWidth="15dp"
-                    android:background="@drawable/blank"
-                    android:src="@drawable/s" />
+                    android:background="@drawable/blank" />
             </LinearLayout>
 
             <FrameLayout
@@ -2847,16 +2844,19 @@
                 android:layout_height="40dp">
 
                 <Button
-                    android:id="@+id/button_tick"
+                    android:id="@+id/button_left"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:onClick="Tick" />
+                    android:onClick="Left"
+                    android:text="&lt;" />
 
                 <Button
-                    android:id="@+id/button_rotate"
+                    android:id="@+id/button_right"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:onClick="Rotate" />
+                    android:onClick="Right"
+                    android:text="&gt;" />
+
             </TableRow>
 
             <TableRow
@@ -2864,22 +2864,19 @@
                 android:layout_height="40dp">
 
                 <Button
-                    android:id="@+id/button_left"
+                    android:id="@+id/button_rotate"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:onClick="Left" />
+                    android:onClick="Rotate"
+                    android:text="R" />
 
                 <Button
                     android:id="@+id/button_down"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:onClick="Down" />
+                    android:onClick="Down"
+                    android:text="v" />
 
-                <Button
-                    android:id="@+id/button_right"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:onClick="Right" />
             </TableRow>
 
         </TableLayout>

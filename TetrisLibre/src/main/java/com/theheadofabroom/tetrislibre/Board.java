@@ -2,19 +2,14 @@ package com.theheadofabroom.tetrislibre;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
-import com.theheadofabroom.tetrislibre.pieces.*;
-import com.theheadofabroom.tetrislibre.*;
+import com.theheadofabroom.tetrislibre.pieces.Piece;
 
 import java.util.HashMap;
 import java.util.Iterator;
 
 public class Board{
-
-
 
     private Piece current;
     public Piece getCurrent() {
@@ -24,29 +19,6 @@ public class Board{
     private Piece next;
     public Piece getNext() {
         return next;
-    }
-
-    public void Down()
-    {
-        if (current == null)
-            CyclePiece();
-        else
-            current.Down();
-    }
-
-    public void Rotate()
-    {
-        current.Rotate();
-    }
-
-    public void Left()
-    {
-        current.Left();
-    }
-
-    public void Right()
-    {
-        current.Right();
     }
 
     public void CyclePiece()
@@ -348,19 +320,13 @@ public class Board{
     public void Draw()
     {
         // draw the board
-        for (int y = 0; y < BoardCells.length; ++y)
-        {
-            ImageView[] row = BoardCells[y];
-            for (int x = 0; x < row.length; ++x)
-            {
-                row[x].setImageResource(android.R.color.transparent);
+        for (ImageView[] row : BoardCells) {
+            for (ImageView view : row) {
+                view.setImageResource(android.R.color.transparent);
             }
         }
 
-        Iterator<TwoDimensionalCoordinate> cell_coords = grid.keySet().iterator();
-        while (cell_coords.hasNext())
-        {
-            TwoDimensionalCoordinate cell = cell_coords.next();
+        for (TwoDimensionalCoordinate cell : grid.keySet()) {
             int x = cell.GetX();
             int y = cell.GetY();
 

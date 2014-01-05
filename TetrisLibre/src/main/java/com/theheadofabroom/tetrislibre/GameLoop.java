@@ -4,6 +4,10 @@ import android.os.Handler;
 
 public final class GameLoop
 {
+    static
+    {
+        Tick();
+    }
     public static boolean active()
     {
         return shouldTick;
@@ -18,10 +22,6 @@ public final class GameLoop
     public static void StopTick()
     {
         shouldTick = false;
-    }
-    public static void ResetGame()
-    {
-        gameNotOver = true;
     }
 
     private static Handler handler = new Handler();
@@ -41,7 +41,6 @@ public final class GameLoop
         if (!shouldTick) return;
 
         ++tick_num;
-        GameState.Draw();
         if (tick_num % fall_rate == 0)
         {
             if (GameState.Down())
@@ -52,10 +51,5 @@ public final class GameLoop
         }
 
 
-    }
-
-    static
-    {
-        Tick();
     }
 }

@@ -7,35 +7,80 @@ import android.widget.ImageView;
 import com.theheadofabroom.tetrislibre.pieces.Piece;
 
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.Map;
 
-public class Board{
+public final class Board {
+    private static ImageView[][] cells;
+    private static HashMap<TwoDimensionalCoordinate, Drawable> background;
+    private static HashMap<TwoDimensionalCoordinate, Drawable> foreground;
 
-    private Piece current;
-    public Piece getCurrent() {
+    public static void Settle() {
+        for (TwoDimensionalCoordinate key : foreground.keySet()) {
+            background.put(key, foreground.get(key));
+        }
+        foreground = new HashMap<TwoDimensionalCoordinate, Drawable>();
+    }
+
+    public static boolean Empty(TwoDimensionalCoordinate coordinate) {
+        int x = coordinate.GetX();
+        int y = coordinate.GetY();
+        //noinspection SimplifiableIfStatement
+        if (y < 0 || y >= cells.length || x < 0 || x >= cells[y].length)
+            return false;
+        return !background.containsKey(coordinate);
+    }
+
+    private static Piece current;
+    private static Piece next;
+
+    public static Piece getCurrent() {
         return current;
     }
 
-    private Piece next;
-    public Piece getNext() {
+    public static Piece getNext() {
         return next;
     }
 
-    public void CyclePiece()
-    {
-        if (next == null) next = Piece.next(this);
+    public static void CyclePiece() {
+        if (next == null) next = Piece.next();
 
         current = next;
-        next = Piece.next(this);
+        if (current.OK()) current.ForceDraw();
+        next = Piece.next();
+
+        NextPiece.Replace(next);
     }
 
-    public HashMap<TwoDimensionalCoordinate, Drawable> grid;
+    static {
+        background = new HashMap<TwoDimensionalCoordinate, Drawable>();
+        foreground = new HashMap<TwoDimensionalCoordinate, Drawable>();
+    }
 
-    private static ImageView[][] BoardCells;
-    
-    public static void Connect(Activity act)
-    {
-        BoardCells = new ImageView[][]{
+    private static ImageView getCell(int x, int y) {
+        if (!InGrid(x, y)) return null;
+        return cells[y][x];
+    }
+
+    public static boolean InGrid(int x, int y) {
+        return !(cells == null || y > cells.length || x > cells[y].length);
+    }
+
+    private static ImageView getCell(TwoDimensionalCoordinate cell) {
+        return getCell(cell.GetX(), cell.GetY());
+    }
+
+    public static class PieceImages {
+        public static Drawable I;
+        public static Drawable J;
+        public static Drawable L;
+        public static Drawable S;
+        public static Drawable Z;
+        public static Drawable O;
+        public static Drawable T;
+    }
+
+    public static void Connect(Activity act) {
+        cells = new ImageView[][]{
                 {
                         (ImageView) act.findViewById(R.id.board_0_0),
                         (ImageView) act.findViewById(R.id.board_0_1),
@@ -278,6 +323,7 @@ public class Board{
                 }
         };
 
+
         PieceImages.I = act.getResources().getDrawable(R.drawable.i);
         PieceImages.J = act.getResources().getDrawable(R.drawable.j);
         PieceImages.L = act.getResources().getDrawable(R.drawable.l);
@@ -285,57 +331,63 @@ public class Board{
         PieceImages.Z = act.getResources().getDrawable(R.drawable.z);
         PieceImages.O = act.getResources().getDrawable(R.drawable.o);
         PieceImages.T = act.getResources().getDrawable(R.drawable.t);
+
+        if (current == null)
+            CyclePiece();
     }
 
-    public static class PieceImages
-    {
-        public static Drawable I;
-        public static Drawable J;
-        public static Drawable L;
-        public static Drawable S;
-        public static Drawable Z;
-        public static Drawable O;
-        public static Drawable T;
+    public static void ForceFullRedraw() {
+        for (ImageView[] row : cells)
+            for (ImageView view : row)
+                ClearView(view);
+
+        for (Map.Entry<TwoDimensionalCoordinate, Drawable> entry : background.entrySet())
+            SetViewDrawable(entry);
+
+        for (Map.Entry<TwoDimensionalCoordinate, Drawable> entry : foreground.entrySet())
+            SetViewDrawable(entry);
+
+        if (next != null)
+            NextPiece.Replace(next);
     }
 
-    public Board()
-    {
-        grid = new HashMap<TwoDimensionalCoordinate, Drawable>();
+    private static void ClearView(ImageView view) {
+        if (view != null)
+            view.setImageResource(android.R.color.transparent);
     }
 
-    public Board(Board other)
-    {
-        grid = new HashMap<TwoDimensionalCoordinate, Drawable>();
-
-        int num_keys = other.grid.keySet().size();
-        Iterator<TwoDimensionalCoordinate> iter_keys = other.grid.keySet().iterator();
-        for (int i = 0; i < num_keys; i++)
-        {
-            TwoDimensionalCoordinate key = iter_keys.next();
-            Drawable value = other.grid.get(key);
-            grid.put(key, value);
+    public static void ClearCell(TwoDimensionalCoordinate cell) {
+        if (background.containsKey(cell)) {
+            background.remove(cell);
+            ClearView(getCell(cell));
         }
-    }
-
-    public void Draw()
-    {
-        // draw the board
-        for (ImageView[] row : BoardCells) {
-            for (ImageView view : row) {
-                view.setImageResource(android.R.color.transparent);
-            }
+        if (foreground.containsKey(cell)) {
+            foreground.remove(cell);
+            ClearView(getCell(cell));
         }
 
-        for (TwoDimensionalCoordinate cell : grid.keySet()) {
-            int x = cell.GetX();
-            int y = cell.GetY();
 
-            // if somehow the piece has a segment above the board, ignore it
-            if (y >= BoardCells.length) continue;
-
-            Drawable img = grid.get(cell);
-            BoardCells[y][x].setImageDrawable(img);
-        }
     }
 
+    private static void AddCell(HashMap<TwoDimensionalCoordinate, Drawable> cells,
+                                TwoDimensionalCoordinate position,
+                                Drawable img) {
+        if (position == null || img == null) return;
+
+        cells.put(position, img);
+        SetViewDrawable(img, getCell(position));
+    }
+
+    private static void SetViewDrawable(Drawable img, ImageView view) {
+        if (view != null)
+            view.setImageDrawable(img);
+    }
+
+    private static void SetViewDrawable(Map.Entry<TwoDimensionalCoordinate, Drawable> entry) {
+        SetViewDrawable(entry.getValue(), getCell(entry.getKey()));
+    }
+
+    public static void AddForegroundCell(TwoDimensionalCoordinate cell, Drawable img) {
+        AddCell(foreground, cell, img);
+    }
 }

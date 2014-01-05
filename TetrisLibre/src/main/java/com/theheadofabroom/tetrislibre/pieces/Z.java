@@ -4,8 +4,8 @@ import com.theheadofabroom.tetrislibre.*;
 
 public class Z extends Piece
 {
-    public Z(Board board_) {
-        super(board_);
+    public Z() {
+        super();
         img = Board.PieceImages.Z;
         shape = new Shape(
                 3, 0,

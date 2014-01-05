@@ -8,67 +8,69 @@ import java.util.Random;
 public abstract class Piece
 {
     private final static Random rand = new Random();
-    public static Piece next(Board board)
+    public static Piece next()
     {
         int choice = rand.nextInt(7);
         switch (choice)
         {
             case 0:
-                return new I(board);
+                return new I();
             case 1:
-                return new J(board);
+                return new J();
             case 2:
-                return new L(board);
+                return new L();
             case 3:
-                return new O(board);
+                return new O();
             case 4:
-                return new S(board);
+                return new S();
             case 5:
-                return new T(board);
+                return new T();
             case 6:
-                return new Z(board);
+                return new Z();
             default:
                 throw new UnknownError("Somehow got rand.nextInt(7) returning something not in [0, 1, 2, 3, 4, 5, 6]");
         }
     }
 
     private TwoDimensionalCoordinate position;
-    private boolean rendered;
-
-    private Board board;
-    private Board board_overlaid;
 
     public Drawable img;
     public Shape shape;
 
-    public Piece(Board board_)
+    public Piece()
     {
         position = new TwoDimensionalCoordinate(3, 18);
-        board = board_;
-        rendered = false;
     }
 
-    public final Board Render()
+    private void Scrub()
     {
-        if (!rendered)
-        {
-            board_overlaid = new Board(board);
-            Settle(board_overlaid);
-        }
-        return board_overlaid;
+        for (TwoDimensionalCoordinate segment : shape.GetSegments())
+            Board.ClearCell(segment.add(position));
+    }
+
+    private void Draw()
+    {
+        for (TwoDimensionalCoordinate segment : shape.GetSegments())
+            Board.AddForegroundCell(segment.add(position), img);
+    }
+    private void Draw(TwoDimensionalCoordinate new_position)
+    {
+        Scrub();
+        position = new_position;
+        Draw();
+    }
+    private void Draw(Shape new_shape)
+    {
+        Scrub();
+        shape = new_shape;
+        Draw();
     }
 
     private boolean OK(Shape new_shape, TwoDimensionalCoordinate new_coord)
     {
-        TwoDimensionalCoordinate[] cells = new_shape.GetSegments();
-        for (TwoDimensionalCoordinate cell1 : cells) {
-            TwoDimensionalCoordinate cell = new_coord.add(cell1);
-            int x = cell.GetX();
-            int y = cell.GetY();
-            if (board.grid.containsKey(cell) || x < 0 || x >= 10 || y < 0) {
+        for (TwoDimensionalCoordinate segment : new_shape.GetSegments())
+            if (!Board.Empty(new_coord.add(segment)))
                 return false;
-            }
-        }
         return true;
     }
     private boolean OK(Shape new_shape)
@@ -79,78 +81,58 @@ public abstract class Piece
     {
         return OK(shape, new_coord);
     }
-
     public final boolean OK()
     {
         return OK(shape, position);
     }
 
-    public final boolean Down()
+    private boolean Move(TwoDimensionalCoordinate new_position)
     {
-        TwoDimensionalCoordinate new_position = position.add(0, -1);
-
         if (! OK(new_position))
         {
-            Settle();
             return true;
         }
         else
         {
-            position = new_position;
-            Render().Draw();
+            Draw(new_position);
             return false;
         }
     }
 
-
+    private boolean Move(Shape new_shape)
+    {
+        if (! OK(new_shape))
+        {
+            return true;
+        }
+        else
+        {
+            Draw(new_shape);
+            return false;
+        }
+    }
+    public final boolean Down()
+    {
+        boolean settle = Move(position.add(0, -1));
+        if (settle) Board.Settle();
+        return settle;
+    }
     public final void Rotate()
     {
-        Shape new_shape = shape.rotated();
-        if (OK(new_shape))
-        {
-            shape = new_shape;
-            Render().Draw();
-        }
+        Move(shape.rotated());
     }
-
     public final void Left()
     {
-        TwoDimensionalCoordinate new_position = position.add(-1, 0);
-
-        if (this.OK(new_position))
-        {
-            position = new_position;
-            Render().Draw();
-        }
+        Move(position.add(-1, 0));
     }
-
     public final void Right()
     {
-        TwoDimensionalCoordinate new_position = position.add(1, 0);
-
-        if (this.OK(new_position))
-        {
-            position = new_position;
-            Render().Draw();
-        }
+        Move(position.add(1, 0));
     }
 
-
-    private void Settle(Board board_)
-    {
-        TwoDimensionalCoordinate[] cells = shape.GetSegments();
-        for (TwoDimensionalCoordinate cell1 : cells) {
-            TwoDimensionalCoordinate cell = position.add(cell1);
-            board_.grid.put(cell, img);
-        }
+    public final void ForceDraw() {
+        Scrub();
+        Draw();
     }
-
-    public final void Settle()
-    {
-        Settle(board);
-        board.CyclePiece();
-        GameState.Draw();
-    }
-
 }
 

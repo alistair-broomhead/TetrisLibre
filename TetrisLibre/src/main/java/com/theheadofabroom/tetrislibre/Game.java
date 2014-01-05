@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
+@SuppressWarnings("ALL")
 public class Game extends ActionBarActivity {
 
     @Override
@@ -11,16 +12,12 @@ public class Game extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_main);
         GameState.Connect(this);
-        GameState.Draw();
-        // GameLoop.StartTick();
     }
-
     @Override
     protected void onStop() {
         super.onStop();
         GameLoop.StopTick();
     }
-
     @Override
     protected void onPause() {
         super.onPause();
@@ -30,15 +27,14 @@ public class Game extends ActionBarActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        Board.ForceFullRedraw();
         GameLoop.StartTick();
     }
-
     @Override
     protected void onStart() {
         super.onStart();
         GameLoop.StartTick();
     }
-
     public void Down(View view)
     {
         if (GameLoop.active())

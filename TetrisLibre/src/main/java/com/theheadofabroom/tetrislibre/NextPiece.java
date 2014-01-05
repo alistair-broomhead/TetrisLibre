@@ -7,8 +7,6 @@ import com.theheadofabroom.tetrislibre.pieces.*;
 public final class NextPiece
 {
     public static ImageView[][] grid;
-
-    private static boolean initialised = false;
     public static void Connect(Activity act)
     {
         grid = new ImageView[][]{
@@ -28,20 +26,17 @@ public final class NextPiece
     }
     public static void Replace(Piece piece)
     {
-        for (int y = 0; y < grid.length; ++y)
-        {
-            ImageView[] row = grid[y];
-            for (int x = 0; x < row.length; ++x)
-            {
-                row[x].setImageResource(android.R.color.transparent);
-            }
-        }
-        TwoDimensionalCoordinate[] cells = piece.shape.GetSegments();
-        for (int i = 0; i < cells.length; i++)
-        {
-            TwoDimensionalCoordinate cell = cells[i];
+        if (grid == null) return;
+
+        for (ImageView[] row : grid)
+            for (ImageView aRow : row)
+                aRow.setImageResource(android.R.color.transparent);
+
+        if (piece == null) return;
+
+        for (TwoDimensionalCoordinate cell : piece.shape.GetSegments())
             grid[cell.GetY()][cell.GetX()].setImageDrawable(piece.img);
-        }
+
     }
 
     static {}

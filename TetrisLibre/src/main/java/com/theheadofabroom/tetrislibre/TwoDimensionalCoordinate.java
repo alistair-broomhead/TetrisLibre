@@ -29,17 +29,29 @@ public class TwoDimensionalCoordinate {
         hashCodeStored = x + (100 * y); // x is expected to lie in [-1, 10], y in [-1, 20]
     }
 
-    public TwoDimensionalCoordinate(TwoDimensionalCoordinate other){
-        x = other.GetX();
-        y = other.GetY();
-        hashCodeStored = other.hashCode();
+    public TwoDimensionalCoordinate RotatedAbout()
+    {
+        return new TwoDimensionalCoordinate(y, -x);
+    }
+
+    public TwoDimensionalCoordinate RotatedAbout(TwoDimensionalCoordinate origin)
+    {
+        return subtract(origin).RotatedAbout().add(origin);
     }
 
     public TwoDimensionalCoordinate add(TwoDimensionalCoordinate other){
-        return new TwoDimensionalCoordinate(x + other.GetX(), y + other.GetY());
+        return add(other.GetX(), other.GetY());
     }
 
     public TwoDimensionalCoordinate add(int x_coordinate, int y_coordinate){
         return new TwoDimensionalCoordinate(x + x_coordinate, y + y_coordinate);
+    }
+
+    public TwoDimensionalCoordinate subtract(TwoDimensionalCoordinate other){
+        return subtract(other.GetX(), other.GetY());
+    }
+
+    public TwoDimensionalCoordinate subtract(int x_coordinate, int y_coordinate){
+        return new TwoDimensionalCoordinate(x - x_coordinate, y - y_coordinate);
     }
 }

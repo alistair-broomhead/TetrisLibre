@@ -33,14 +33,6 @@ public class Shape {
         p3 = s3;
     }
 
-    public Shape(TwoDimensionalCoordinate s0,
-                 TwoDimensionalCoordinate s1,
-                 TwoDimensionalCoordinate s2,
-                 TwoDimensionalCoordinate s3)
-    {
-        SetSegments(s0, s1, s2, s3);
-    }
-
     public Shape(int x0, int y0,
                  int x1, int y1,
                  int x2, int y2,
@@ -52,13 +44,24 @@ public class Shape {
                     new TwoDimensionalCoordinate(x3, y3));
     }
 
+    public Shape(TwoDimensionalCoordinate p0_,
+                 TwoDimensionalCoordinate p1_,
+                 TwoDimensionalCoordinate p2_,
+                 TwoDimensionalCoordinate p3_)
+    {
+        SetSegments(p0_, p1_, p2_, p3_);
+    }
+
     public Shape rotated()
     {
+        TwoDimensionalCoordinate sum = p0.add(p1.add(p2.add(p3)));
+        TwoDimensionalCoordinate origin = new TwoDimensionalCoordinate(sum.GetX()/4, sum.GetY()/4);
+
         return new Shape(
-                p0.GetY(), -p0.GetX(),
-                p1.GetY(), -p1.GetX(),
-                p2.GetY(), -p2.GetX(),
-                p3.GetY(), -p3.GetX()
+                p0.RotatedAbout(origin),
+                p1.RotatedAbout(origin),
+                p2.RotatedAbout(origin),
+                p3.RotatedAbout(origin)
                 );
     }
 }

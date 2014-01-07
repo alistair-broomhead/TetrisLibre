@@ -11,7 +11,8 @@ public class T extends Piece
                 1, 0,
                 2, 0,
                 2, 1,
-                3, 0
+                3, 0,
+                2, 0
         );
 
     }
